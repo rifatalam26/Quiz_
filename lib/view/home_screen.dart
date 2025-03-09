@@ -63,6 +63,37 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
+          Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Card(
+                shadowColor: Colors.black,
+                elevation: 5,
+                margin: EdgeInsets.only(top: 15),
+                child: Container(
+                  height: 130,
+                  width: 150,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20)
+                  ),
+                ),
+              ),
+              Card(
+                shadowColor: Colors.black,
+                elevation: 5,
+                margin: EdgeInsets.only(top: 15),
+                child: Container(
+                  height: 130,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20)
+                  ),
+                ),
+              ),
+            ],
+          )
         ],
       ),
 
