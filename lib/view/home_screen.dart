@@ -77,6 +77,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20)
                   ),
+                  child: Column(
+                    children: [
+                      Text("ইসলামিক কুইজ",style:TextStyle(fontSize: 15,fontWeight: FontWeight.bold) ,)
+                    ],
+                  ),
                 ),
               ),
               Card(
