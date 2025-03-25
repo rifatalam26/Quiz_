@@ -61,6 +61,24 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Colors.blueGrey,
                           borderRadius: BorderRadius.circular(20),
                           border: Border.all(width: 1, color: Colors.red)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            radius: 10,
+                            backgroundImage:
+                                AssetImage("assets/image/coion.png"),
+                            // backgroundColor: Colors.red,
+                          ),
+                          SizedBox(width: 5,),
+                          Text(
+                            "12",
+                            style: TextStyle(
+                                color: Colors.yellow,
+                                fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
                     ),
                   )
                 ],
