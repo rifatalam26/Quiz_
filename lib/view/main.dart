@@ -1,6 +1,8 @@
 import 'package:bangla_quiz/view/home_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'islamic_quiz_level_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: IslamicQuizLevelScreen(),
     );
   }
 }
