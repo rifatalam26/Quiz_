@@ -134,12 +134,15 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 100,
                           width: 100,
                           decoration: BoxDecoration(
-                            image: DecorationImage(image: AssetImage("assets/image/dargon-removebg-preview.png"))
-                          ),
-
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      "assets/image/dargon-removebg-preview.png"))),
                         ),
-                        Text("ফলের কুইজ", style: TextStyle(
-                        fontSize: 15, fontWeight: FontWeight.bold),)
+                        Text(
+                          "ফলের কুইজ",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold),
+                        )
                       ],
                     ),
                   ),
@@ -159,6 +162,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      "assets/image/brain-removebg-preview.png"))),
+                        ),
+                        Text(
+                          "সাধারণ জ্ঞান",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 Card(
@@ -171,6 +191,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      "assets/image/animal-removebg-preview.png"))),
+                        ),
+                        Text(
+                          "প্রাণীর কইজ",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],
@@ -188,6 +225,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      "assets/image/football-removebg-preview.png"))),
+                        ),
+                        Text(
+                          "খেলাধুলার কুইজ",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 Card(
@@ -200,6 +254,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      "assets/image/mape-removebg-preview.png"))),
+                        ),
+                        Text(
+                          "আন্তর্জাতিক কুইজ",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],
