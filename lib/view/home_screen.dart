@@ -70,7 +70,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                 AssetImage("assets/image/coion.png"),
                             // backgroundColor: Colors.red,
                           ),
-                          SizedBox(width: 5,),
+                          SizedBox(
+                            width: 5,
+                          ),
                           Text(
                             "12",
                             style: TextStyle(
@@ -99,6 +101,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         borderRadius: BorderRadius.circular(20)),
                     child: Column(
                       children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      "assets/image/kuran-removebg-preview.png"))),
+                        ),
                         Text(
                           "ইসলামিক কুইজ",
                           style: TextStyle(
@@ -118,6 +128,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(image: AssetImage("assets/image/dargon-removebg-preview.png"))
+                          ),
+
+                        ),
+                        Text("ফলের কুইজ", style: TextStyle(
+                        fontSize: 15, fontWeight: FontWeight.bold),)
+                      ],
+                    ),
                   ),
                 ),
               ],
