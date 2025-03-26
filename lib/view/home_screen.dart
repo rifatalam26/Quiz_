@@ -288,6 +288,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      "assets/image/idia-removebg-preview.png"))),
+                        ),
+                        Text(
+                          "আবিষ্কার কুইজ",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 Card(
