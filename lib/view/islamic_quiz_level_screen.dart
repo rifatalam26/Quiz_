@@ -21,7 +21,7 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
           style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
       ),
-      backgroundColor: Color(0xff0e171f),
+      backgroundColor: const Color(0xff0e171f),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -36,8 +36,8 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                       color: Colors.white, borderRadius: BorderRadius.circular(15)),
                   child: Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
                         child: CircleAvatar(
                           radius: 30,
                           backgroundColor: Colors.lightGreen,
@@ -48,32 +48,37 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 15,
                       ),
-                      Text(
+                      const Text(
                         "Level- 1",
                         style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold,
                             color: Color(0xff1c486b)),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 60,
                       ),
-                      Container(
-                        height: 45,
-                        width: 80,
-                        decoration: BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.circular(35)),
-                        child: Center(
-                          child: Text(
-                            "Play",
-                            style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white),
+                      InkWell(
+                        onTap: (){
+                          print("----------tappet");
+                        },
+                        child: Container(
+                          height: 45,
+                          width: 80,
+                          decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(35)),
+                          child: const Center(
+                            child: Text(
+                              "Play",
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            ),
                           ),
                         ),
                       )
