@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class IslamicQuizLevelScreen extends StatefulWidget {
@@ -16,7 +15,7 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
         foregroundColor: Colors.white,
         centerTitle: true,
         backgroundColor: Colors.indigo,
-        title: Text(
+        title: const Text(
           "ইসলামিক কুইজ",
           style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
@@ -62,9 +61,7 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                         width: 60,
                       ),
                       InkWell(
-                        onTap: (){
-                          print("----------tappet");
-                        },
+                        onTap: (){},
                         child: Container(
                           height: 45,
                           width: 80,
@@ -242,7 +239,7 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                           decoration: BoxDecoration(
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(35)),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Play",
                               style: TextStyle(
