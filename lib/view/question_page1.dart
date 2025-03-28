@@ -18,8 +18,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
             decoration: const BoxDecoration(
                 color: Colors.indigo,
                 borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(50),
-                    bottomRight: Radius.circular(0))),
+                    bottomLeft: Radius.circular(50),)),
             child: const Row(
               children: [
                 SizedBox(

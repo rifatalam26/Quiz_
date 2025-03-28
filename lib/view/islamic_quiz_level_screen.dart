@@ -1,3 +1,4 @@
+import 'package:bangla_quiz/view/question_page1.dart';
 import 'package:flutter/material.dart';
 
 class IslamicQuizLevelScreen extends StatefulWidget {
@@ -61,7 +62,10 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                         width: 60,
                       ),
                       InkWell(
-                        onTap: (){},
+                        onTap: (){
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context)=>const QuestionPage1()));
+                        },
                         child: Container(
                           height: 45,
                           width: 80,

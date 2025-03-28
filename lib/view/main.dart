@@ -1,5 +1,6 @@
 import 'package:bangla_quiz/view/home_screen.dart';
 import 'package:bangla_quiz/view/question_page1.dart';
+import 'package:bangla_quiz/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'islamic_quiz_level_screen.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: QuestionPage1(),
+      home: SplashScreen(),
     );
   }
 }
