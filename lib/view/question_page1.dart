@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class QuestionPage1 extends StatefulWidget {
@@ -90,7 +89,114 @@ class _QuestionPage1State extends State<QuestionPage1> {
           const SizedBox(
             height: 15,
           ),
-
+          Container(
+            height: 120,
+            width: 335,
+            decoration: BoxDecoration(
+                color: Colors.indigo, borderRadius: BorderRadius.circular(30)),
+            child: const Center(
+                child: Text(
+              "ইসলামের প্রথম নবী কে?",
+              style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+            )),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Container(
+            height: 65,
+            width: 300,
+            decoration: const BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    bottomRight: Radius.circular(50))),
+            child: const Center(
+                child: Text("হযরত আদম (আঃ)",
+                    style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white))),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Container(
+            height: 65,
+            width: 300,
+            decoration: const BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    bottomRight: Radius.circular(50))),
+            child: const Center(
+                child: Text("হযরত নূহ (আঃ)",
+                    style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white))),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Container(
+            height: 65,
+            width: 300,
+            decoration: const BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    bottomRight: Radius.circular(50))),
+            child: const Center(
+                child: Text("হযরত মুহাম্মদ (সঃ)",
+                    style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white))),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Container(
+            height: 65,
+            width: 300,
+            decoration: const BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    bottomRight: Radius.circular(50))),
+            child: const Center(
+                child: Text("হযরত ইবরাহীম (আঃ)",
+                    style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white))),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (){},
+            child: Container(
+              height: 50,
+              width: 220,
+              decoration: BoxDecoration(
+                color: Colors.deepOrangeAccent,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: const Center(
+                  child: Text(
+                "Next",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 22,
+                    color: Colors.white),
+              )),
+            ),
+          )
         ],
       ),
     );
