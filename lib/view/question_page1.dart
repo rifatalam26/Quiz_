@@ -12,19 +12,11 @@ class _QuestionPage1State extends State<QuestionPage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Colors.indigo,
-      //   title: Text(
-      //     "Bangla Quiz",
-      //     style: TextStyle(
-      //         fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
-      //   ),
-      // ),
       body: Column(
         children: [
           Container(
-            height: 80,
-            decoration: BoxDecoration(
+            height: 120,
+            decoration: const BoxDecoration(
                 color: Colors.indigo,
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(50),
@@ -40,7 +32,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
                         fontWeight: FontWeight.bold,
                         color: Colors.white)),
                 SizedBox(
-                  width: 120,
+                  width: 108,
                 ),
                 Text(
                   "1/10",
@@ -50,19 +42,55 @@ class _QuestionPage1State extends State<QuestionPage1> {
                       color: Colors.white),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(10.0),
                   child: CircleAvatar(
                     radius: 20,
                     backgroundColor: Colors.lightGreen,
                     child: Text(
-                      "Q/a",
-                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      "Q/A",
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ),
                 )
               ],
             ),
-          )
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          Container(
+            height: 55,
+            width: 120,
+            decoration: BoxDecoration(
+              color: Colors.indigo,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  height: 30,
+                  width: 30,
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(
+                              "assets/image/watch-removebg-preview.png"))),
+                ),
+                const Text(
+                  "50",
+                  style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.yellow),
+                )
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+
         ],
       ),
     );
