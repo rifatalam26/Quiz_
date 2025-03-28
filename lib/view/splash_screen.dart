@@ -1,5 +1,4 @@
 import 'package:bangla_quiz/view/home_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -10,63 +9,49 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   @override
   void initState() {
     goscreen();
     super.initState();
   }
+
   Future goscreen() async {
-    Future.delayed(Duration(seconds: 2)).then((Value) {
+    Future.delayed(const Duration(seconds: 4)).then((value) {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-        child: SizedBox(
-            child: CircularProgressIndicator(
+      backgroundColor: const Color(0xff0e171f),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            height: 120,
+            width: 120,
+            decoration: BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.circular(30),
+                image: DecorationImage(
+                    image: AssetImage(
+                        "assets/image/Splash_image-removebg-preview.png"))),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Center(
+            child: SizedBox(
+                child: CircularProgressIndicator(
               color: Colors.blue,
               backgroundColor: Colors.grey,
-              strokeWidth: 3,
+              strokeWidth: 5,
             )),
+          ),
+        ],
       ),
     );
   }
 }
-// class SplashScreen2 extends StatefulWidget {
-//   const SplashScreen2({super.key});
-//
-//   @override
-//   State<SplashScreen2> createState() => _SplashScreen2State();
-// }
-//
-// class _SplashScreen2State extends State<SplashScreen2> {
-//   void initState() {
-//     goscreen();
-//     super.initState();
-//   }
-//
-//   Future goscreen() async {
-//     Future.delayed(Duration(seconds: 2)).then((Value) {
-//       Navigator.push(
-//           context, MaterialPageRoute(builder: (context) => QuizeApp()));
-//     });
-//   }
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Center(
-//         child: SizedBox(
-//             child: CircularProgressIndicator(
-//               color: Colors.blue,
-//               backgroundColor: Colors.grey,
-//               strokeWidth: 3,
-//             )),
-//       ),
-//     );
-//   }
-// }
