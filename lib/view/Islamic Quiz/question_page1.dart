@@ -1,5 +1,6 @@
 import 'package:bangla_quiz/view/Islamic%20Quiz/question_page2.dart';
 import 'package:flutter/material.dart';
+
 class QuestionPage1 extends StatefulWidget {
   const QuestionPage1({super.key});
 
@@ -12,12 +13,13 @@ class _QuestionPage1State extends State<QuestionPage1> {
   // bool check1 = false;
   // bool check2 = false;
   // bool check3 = false;
-  int counter_seconds = 10;
+  int counter_seconds = 30;
 
   void initState() {
     setTimer();
     super.initState();
   }
+
   void setTimer() async {
     Future.delayed(Duration(seconds: 1)).then((value) {
       print("--------$counter_seconds-------");
@@ -74,8 +76,8 @@ class _QuestionPage1State extends State<QuestionPage1> {
                       backgroundColor: Colors.lightGreen,
                       child: Text(
                         "Q/A",
-                        style:
-                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
                   )
@@ -103,7 +105,13 @@ class _QuestionPage1State extends State<QuestionPage1> {
                             image: AssetImage(
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
-
+                  Text(
+                    counter_seconds.toString(),
+                    style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  )
                 ],
               ),
             ),
@@ -114,7 +122,8 @@ class _QuestionPage1State extends State<QuestionPage1> {
               height: 120,
               width: 335,
               decoration: BoxDecoration(
-                  color: Colors.indigo, borderRadius: BorderRadius.circular(30)),
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.circular(30)),
               child: const Center(
                   child: Text(
                 "ইসলামের প্রথম নবী কে?",
@@ -201,9 +210,11 @@ class _QuestionPage1State extends State<QuestionPage1> {
             ),
             InkWell(
               onTap: () {
-                counter_seconds=0;
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const QuestionPage2()));
+                counter_seconds = 0;
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const QuestionPage2()));
               },
               child: Container(
                 height: 50,
@@ -229,10 +240,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
   }
 }
 
-
-
-class CustomCircleAvater {
-}
+class CustomCircleAvater {}
 
 // class _QuestionPage1State extends State<QuestionPage1> {
 //   bool check = false;
