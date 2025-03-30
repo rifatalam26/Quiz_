@@ -29,7 +29,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
           setTimer();
         } else {
           print("--------End--------");
-          Navigator.push(context,
+          Navigator.pushReplacement(context,
               MaterialPageRoute(builder: (context) => const QuestionPage2()));
         }
       });
@@ -107,7 +107,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
                   ),
                   Text(
                     counter_seconds.toString(),
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
@@ -211,7 +211,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
             InkWell(
               onTap: () {
                 counter_seconds = 0;
-                Navigator.push(
+                Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const QuestionPage2()));
