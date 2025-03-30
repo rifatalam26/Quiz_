@@ -10,6 +10,25 @@ class QuestionPage10 extends StatefulWidget {
 }
 
 class _QuestionPage10State extends State<QuestionPage10> {
+  int counter_seconds=30;
+  @override
+  void initState() {
+    setTimer();
+    super.initState();
+  }
+  void setTimer()async{
+    Future.delayed(Duration(seconds: 1)).then((value){
+      setState(() {
+        if(counter_seconds>0){
+          counter_seconds--;
+          setTimer();
+        }else{
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context)=>IslamicQuizLevelScreen()));
+        }
+      });
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,8 +97,8 @@ class _QuestionPage10State extends State<QuestionPage10> {
                             image: AssetImage(
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
-                  const Text(
-                    "50",
+                   Text(
+                    counter_seconds.toString(),
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -191,7 +210,7 @@ class _QuestionPage10State extends State<QuestionPage10> {
             ),
             InkWell(
               onTap: (){
-                Navigator.push(context,
+                Navigator.pushReplacement(context,
                     MaterialPageRoute(builder: (context)=>const IslamicQuizLevelScreen()));
               },
               child: Container(

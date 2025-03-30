@@ -110,7 +110,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
                     style: const TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white),
+                        color: Colors.yellow),
                   )
                 ],
               ),
