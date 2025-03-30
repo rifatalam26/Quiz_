@@ -1,3 +1,4 @@
+import 'package:bangla_quiz/view/Islamic%20Quiz/islamic_quiz_level_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -191,7 +192,7 @@ class _QuestionPage10State extends State<QuestionPage10> {
             InkWell(
               onTap: (){
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=>const QuestionPage10()));
+                    MaterialPageRoute(builder: (context)=>const IslamicQuizLevelScreen()));
               },
               child: Container(
                 height: 50,
