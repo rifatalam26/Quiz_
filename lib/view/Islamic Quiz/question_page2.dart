@@ -27,13 +27,8 @@ class _QuestionPage2State extends State<QuestionPage2> {
               MaterialPageRoute(builder: (context)=>QuestionPage3()));
         }
       });
-
     });
-
-
-
  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

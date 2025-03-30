@@ -9,6 +9,26 @@ class QuestionPage3 extends StatefulWidget {
 }
 
 class _QuestionPage3State extends State<QuestionPage3> {
+  int counter_seconds=30;
+
+  @override
+  void initState() {
+   setTiner();
+    super.initState();
+  }
+  void setTiner()async{
+    Future.delayed(Duration(seconds: 1)).then((value){
+      setState(() {
+        if(counter_seconds>0){
+          counter_seconds--;
+          setTiner();
+        }else{
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context)=>QuestionPage4()));
+        }
+      });
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,8 +97,8 @@ class _QuestionPage3State extends State<QuestionPage3> {
                             image: AssetImage(
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
-                  const Text(
-                    "50",
+                   Text(
+                    counter_seconds.toString(),
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -190,7 +210,7 @@ class _QuestionPage3State extends State<QuestionPage3> {
             ),
             InkWell(
               onTap: (){
-                Navigator.push(context,
+                Navigator.pushReplacement(context,
                     MaterialPageRoute(builder: (context)=>const QuestionPage4()));
               },
               child: Container(
