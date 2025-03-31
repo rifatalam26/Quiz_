@@ -1,30 +1,30 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/question_page5.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page2.dart';
 import 'package:flutter/material.dart';
 
-class QuestionPage4 extends StatefulWidget {
-  const QuestionPage4({super.key});
+class L2QuestionPage1 extends StatefulWidget {
+  const L2QuestionPage1({super.key});
 
   @override
-  State<QuestionPage4> createState() => _QuestionPage4State();
+  State<L2QuestionPage1> createState() => _QuestionPage1State();
 }
 
-class _QuestionPage4State extends State<QuestionPage4> {
+class _QuestionPage1State extends State<L2QuestionPage1> {
   int counter_seconds=30;
+
   @override
   void initState() {
-    setTimer();
+    setTiner();
     super.initState();
   }
-  void setTimer()async{
-    Future.delayed(Duration(seconds: 1)).then((value){
+  void setTiner()async{
+    Future.delayed(const Duration(seconds: 1)).then((value){
       setState(() {
         if(counter_seconds>0){
           counter_seconds--;
-          setTimer();
+          setTiner();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>QuestionPage5()));
+              MaterialPageRoute(builder: (context)=>const L2QuestionPage2()));
         }
       });
     });
@@ -55,7 +55,7 @@ class _QuestionPage4State extends State<QuestionPage4> {
                     width: 108,
                   ),
                   Text(
-                    "4/10",
+                    "1/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -120,16 +120,16 @@ class _QuestionPage4State extends State<QuestionPage4> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "ঈমান কি কমে ও বাড়ে  ",
+                        "ইসলামের শেষ নবী কে? ",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      Text("(পরিবর্তন হয়)?", style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),)
+                      // Text("ফেরেশতার সরদার বলা হয়?", style: TextStyle(
+                      //     fontSize: 22,
+                      //     fontWeight: FontWeight.bold,
+                      //     color: Colors.white),)
                     ],
                   )),
             ),
@@ -145,7 +145,7 @@ class _QuestionPage4State extends State<QuestionPage4> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("না",
+                  child: Text("হযরত দাউদ(আঃ)",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -163,37 +163,11 @@ class _QuestionPage4State extends State<QuestionPage4> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("হ্যাঁ",
+                  child: Text("হযরত মুসা (আঃ)",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                           color: Colors.white))),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            Container(
-              height: 66,
-              width: 300,
-              decoration: const BoxDecoration(
-                  color: Colors.indigo,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(50),
-                      bottomRight: Radius.circular(50))),
-              child: const Center(
-                  child: Column(
-                    children: [
-                      Text("এ বিষয়ে কুরআন হাদিসে ",
-                          style: TextStyle(
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                      Text("কিছু বলা নাই", style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white))
-                    ],
-                  )),
             ),
             const SizedBox(
               height: 20,
@@ -207,7 +181,25 @@ class _QuestionPage4State extends State<QuestionPage4> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("উপরের কোনোটি সঠিক নয়",
+                  child: Text("হযরত মুহাম্মদ (সঃ)",
+                      style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white))),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 65,
+              width: 300,
+              decoration: const BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(50),
+                      bottomRight: Radius.circular(50))),
+              child: const Center(
+                  child: Text("হযরত ঈসা (আঃ)",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -219,7 +211,7 @@ class _QuestionPage4State extends State<QuestionPage4> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const QuestionPage5()));
+                    MaterialPageRoute(builder: (context)=>const L2QuestionPage2()));
               },
               child: Container(
                 height: 50,

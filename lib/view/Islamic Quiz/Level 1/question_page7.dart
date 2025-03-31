@@ -1,15 +1,15 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/question_page9.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%201/question_page8.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class QuestionPage8 extends StatefulWidget {
-  const QuestionPage8({super.key});
+class QuestionPage7 extends StatefulWidget {
+  const QuestionPage7({super.key});
 
   @override
-  State<QuestionPage8> createState() => _QuestionPage8State();
+  State<QuestionPage7> createState() => _QuestionPage7State();
 }
 
-class _QuestionPage8State extends State<QuestionPage8> {
+class _QuestionPage7State extends State<QuestionPage7> {
   int counter_seconds=30;
   @override
   void initState() {
@@ -24,7 +24,7 @@ class _QuestionPage8State extends State<QuestionPage8> {
           setTimer();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>QuestionPage9()));
+              MaterialPageRoute(builder: (context)=>QuestionPage8()));
         }
       });
     });
@@ -55,7 +55,7 @@ class _QuestionPage8State extends State<QuestionPage8> {
                     width: 108,
                   ),
                   Text(
-                    "8/10",
+                    "7/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -120,13 +120,13 @@ class _QuestionPage8State extends State<QuestionPage8> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "আল্লাহর ফেরেশতাগণ কিসের ",
+                        "আামাদের সৃষ্টিকর্তা আল্লাহ্ ",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      Text("তৈরি?", style: TextStyle(
+                      Text(" কোথায় আছেন?", style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),)
@@ -145,7 +145,7 @@ class _QuestionPage8State extends State<QuestionPage8> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("মাটির",
+                  child: Text("সর্বত্র বিরাজমান",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -163,7 +163,7 @@ class _QuestionPage8State extends State<QuestionPage8> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("পানি ও বাতাসের",
+                  child: Text("নির্দিষ্টি কিছু জায়গায়",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -181,7 +181,7 @@ class _QuestionPage8State extends State<QuestionPage8> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("আগুনের",
+                  child: Text("মানুষের অন্তরে (ক্বলব)",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -201,11 +201,15 @@ class _QuestionPage8State extends State<QuestionPage8> {
               child: const Center(
                   child: Column(
                     children: [
-                      Text("নূরের ",
+                      Text("সপ্তাকাশের উপর আরশে ",
                           style: TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
                               color: Colors.white)),
+                      Text("আযীমে", style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white))
                     ],
                   )),
             ),
@@ -215,7 +219,7 @@ class _QuestionPage8State extends State<QuestionPage8> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const QuestionPage9()));
+                    MaterialPageRoute(builder: (context)=>const QuestionPage8()));
               },
               child: Container(
                 height: 50,

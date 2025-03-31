@@ -1,15 +1,15 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/question_page7.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%201/question_page9.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class QuestionPage6 extends StatefulWidget {
-  const QuestionPage6({super.key});
+class QuestionPage8 extends StatefulWidget {
+  const QuestionPage8({super.key});
 
   @override
-  State<QuestionPage6> createState() => _QuestionPage6State();
+  State<QuestionPage8> createState() => _QuestionPage8State();
 }
 
-class _QuestionPage6State extends State<QuestionPage6> {
+class _QuestionPage8State extends State<QuestionPage8> {
   int counter_seconds=30;
   @override
   void initState() {
@@ -24,7 +24,7 @@ class _QuestionPage6State extends State<QuestionPage6> {
           setTimer();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>QuestionPage7()));
+              MaterialPageRoute(builder: (context)=>QuestionPage9()));
         }
       });
     });
@@ -55,7 +55,7 @@ class _QuestionPage6State extends State<QuestionPage6> {
                     width: 108,
                   ),
                   Text(
-                    "6/10",
+                    "8/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -120,13 +120,13 @@ class _QuestionPage6State extends State<QuestionPage6> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "আল্লাহ তাআালার কতটি ",
+                        "আল্লাহর ফেরেশতাগণ কিসের ",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      Text(" গুণবাচক নাম রয়েছে?", style: TextStyle(
+                      Text("তৈরি?", style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),)
@@ -145,7 +145,7 @@ class _QuestionPage6State extends State<QuestionPage6> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("১০০",
+                  child: Text("মাটির",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -163,7 +163,7 @@ class _QuestionPage6State extends State<QuestionPage6> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("৯৯",
+                  child: Text("পানি ও বাতাসের",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -181,7 +181,7 @@ class _QuestionPage6State extends State<QuestionPage6> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("১০১",
+                  child: Text("আগুনের",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -199,11 +199,15 @@ class _QuestionPage6State extends State<QuestionPage6> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("৯৮",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white))),
+                  child: Column(
+                    children: [
+                      Text("নূরের ",
+                          style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white)),
+                    ],
+                  )),
             ),
             const SizedBox(
               height: 20,
@@ -211,7 +215,7 @@ class _QuestionPage6State extends State<QuestionPage6> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const QuestionPage7()));
+                    MaterialPageRoute(builder: (context)=>const QuestionPage9()));
               },
               child: Container(
                 height: 50,

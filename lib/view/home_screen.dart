@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/islamic_quiz_level_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'Islamic Quiz/islamic_quiz_level_screen.dart';
+import 'islamic_quiz-level_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -26,17 +26,17 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  SizedBox(width: 10,),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  const SizedBox(width: 10,),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Icon(
                       Icons.menu,
                       size: 40,
                       color: Colors.white,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Text(
                       "Bangala Quiz",
                       style: TextStyle(
@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Colors.white),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 50,
                   ),
                   Padding(
@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Colors.blueGrey,
                           borderRadius: BorderRadius.circular(20),
                           border: Border.all(width: 1, color: Colors.red)),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           CircleAvatar(
@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 InkWell(
                   onTap: (){
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context)=> const IslamicQuizLevelScreen()));
+                        MaterialPageRoute(builder: (context)=>const IslamicQuizLevelScreen()));
                   },
                   child: Card(
                     shadowColor: Colors.black,
@@ -123,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Card(
                   shadowColor: Colors.black,
                   elevation: 5,
-                  margin: EdgeInsets.only(top: 15),
+                  margin: const EdgeInsets.only(top: 15),
                   child: Container(
                     height: 130,
                     width: 150,
@@ -135,12 +135,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: AssetImage(
                                       "assets/image/dargon-removebg-preview.png"))),
                         ),
-                        Text(
+                        const Text(
                           "ফলের কুইজ",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
@@ -157,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Card(
                   shadowColor: Colors.black,
                   elevation: 5,
-                  margin: EdgeInsets.only(top: 30),
+                  margin: const EdgeInsets.only(top: 30),
                   child: Container(
                     height: 130,
                     width: 150,
@@ -169,12 +169,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: AssetImage(
                                       "assets/image/brain-removebg-preview.png"))),
                         ),
-                        Text(
+                        const Text(
                           "সাধারণ জ্ঞান",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
@@ -186,7 +186,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Card(
                   shadowColor: Colors.black,
                   elevation: 5,
-                  margin: EdgeInsets.only(top: 30),
+                  margin: const EdgeInsets.only(top: 30),
                   child: Container(
                     height: 130,
                     width: 150,
@@ -198,12 +198,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: AssetImage(
                                       "assets/image/animal-removebg-preview.png"))),
                         ),
-                        Text(
+                        const Text(
                           "প্রাণীর কইজ",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
@@ -220,7 +220,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Card(
                   shadowColor: Colors.black,
                   elevation: 5,
-                  margin: EdgeInsets.only(top: 30),
+                  margin: const EdgeInsets.only(top: 30),
                   child: Container(
                     height: 130,
                     width: 150,
@@ -232,12 +232,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: AssetImage(
                                       "assets/image/football-removebg-preview.png"))),
                         ),
-                        Text(
+                        const Text(
                           "খেলাধুলার কুইজ",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
@@ -249,7 +249,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Card(
                   shadowColor: Colors.black,
                   elevation: 5,
-                  margin: EdgeInsets.only(top: 30),
+                  margin: const EdgeInsets.only(top: 30),
                   child: Container(
                     height: 130,
                     width: 150,
@@ -261,12 +261,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: AssetImage(
                                       "assets/image/mape-removebg-preview.png"))),
                         ),
-                        Text(
+                        const Text(
                           "আন্তর্জাতিক কুইজ",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
@@ -283,7 +283,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Card(
                   shadowColor: Colors.black,
                   elevation: 5,
-                  margin: EdgeInsets.only(top: 30),
+                  margin: const EdgeInsets.only(top: 30),
                   child: Container(
                     height: 130,
                     width: 150,
@@ -295,12 +295,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: AssetImage(
                                       "assets/image/idia-removebg-preview.png"))),
                         ),
-                        Text(
+                        const Text(
                           "আবিষ্কার কুইজ",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
@@ -312,7 +312,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Card(
                   shadowColor: Colors.black,
                   elevation: 5,
-                  margin: EdgeInsets.only(top: 30),
+                  margin: const EdgeInsets.only(top: 30),
                   child: Container(
                     height: 130,
                     width: 150,
@@ -324,12 +324,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: AssetImage(
                                       "assets/image/paper-removebg-preview.png"))),
                         ),
-                        Text(
+                        const Text(
                           "ইতিহাস কুইজ",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
@@ -346,3 +346,5 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+

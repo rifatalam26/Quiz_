@@ -1,30 +1,31 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/question_page4.dart';
 import 'package:flutter/material.dart';
 
-class QuestionPage3 extends StatefulWidget {
-  const QuestionPage3({super.key});
+import '../../islamic_quiz-level_screen.dart';
+import '../islamic_quiz_level_screen.dart';
+
+class QuestionPage10 extends StatefulWidget {
+  const QuestionPage10({super.key});
 
   @override
-  State<QuestionPage3> createState() => _QuestionPage3State();
+  State<QuestionPage10> createState() => _QuestionPage10State();
 }
 
-class _QuestionPage3State extends State<QuestionPage3> {
+class _QuestionPage10State extends State<QuestionPage10> {
   int counter_seconds=30;
-
   @override
   void initState() {
-   setTiner();
+    setTimer();
     super.initState();
   }
-  void setTiner()async{
+  void setTimer()async{
     Future.delayed(Duration(seconds: 1)).then((value){
       setState(() {
         if(counter_seconds>0){
           counter_seconds--;
-          setTiner();
+          setTimer();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>QuestionPage4()));
+              MaterialPageRoute(builder: (context)=>const IslamicQuizLevelScreen()));
         }
       });
     });
@@ -52,10 +53,10 @@ class _QuestionPage3State extends State<QuestionPage3> {
                           fontWeight: FontWeight.bold,
                           color: Colors.white)),
                   SizedBox(
-                    width: 108,
+                    width: 98,
                   ),
                   Text(
-                    "3/10",
+                    "10/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -120,16 +121,12 @@ class _QuestionPage3State extends State<QuestionPage3> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "কোন ফেরেশতাকে সকল  ",
+                        "কুরআনের প্রথম সূরার নাম কী?",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      Text("ফেরেশতার সরদার বলা হয়?", style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),)
                     ],
                   )),
             ),
@@ -145,7 +142,7 @@ class _QuestionPage3State extends State<QuestionPage3> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("মীকাঈল (আঃ)",
+                  child: Text("সূরা বাকারাহ",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -163,7 +160,7 @@ class _QuestionPage3State extends State<QuestionPage3> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("জিবরাইল (আঃ)",
+                  child: Text("সূরা কাওসার",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -181,7 +178,7 @@ class _QuestionPage3State extends State<QuestionPage3> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("আজরাইল (আঃ)",
+                  child: Text("সূরা ফাতিহা",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -199,11 +196,15 @@ class _QuestionPage3State extends State<QuestionPage3> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("ইসরাফিল(আঃ)",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white))),
+                  child: Column(
+                    children: [
+                      Text("সূরা ইখলাস",
+                          style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white)),
+                    ],
+                  )),
             ),
             const SizedBox(
               height: 20,
@@ -211,7 +212,7 @@ class _QuestionPage3State extends State<QuestionPage3> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const QuestionPage4()));
+                    MaterialPageRoute(builder: (context)=>const IslamicQuizLevelScreen()));
               },
               child: Container(
                 height: 50,

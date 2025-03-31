@@ -1,15 +1,15 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/question_page8.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%201/question_page5.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class QuestionPage7 extends StatefulWidget {
-  const QuestionPage7({super.key});
+class QuestionPage4 extends StatefulWidget {
+  const QuestionPage4({super.key});
 
   @override
-  State<QuestionPage7> createState() => _QuestionPage7State();
+  State<QuestionPage4> createState() => _QuestionPage4State();
 }
 
-class _QuestionPage7State extends State<QuestionPage7> {
+class _QuestionPage4State extends State<QuestionPage4> {
   int counter_seconds=30;
   @override
   void initState() {
@@ -24,7 +24,7 @@ class _QuestionPage7State extends State<QuestionPage7> {
           setTimer();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>QuestionPage8()));
+              MaterialPageRoute(builder: (context)=>QuestionPage5()));
         }
       });
     });
@@ -55,7 +55,7 @@ class _QuestionPage7State extends State<QuestionPage7> {
                     width: 108,
                   ),
                   Text(
-                    "7/10",
+                    "4/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -120,13 +120,13 @@ class _QuestionPage7State extends State<QuestionPage7> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "আামাদের সৃষ্টিকর্তা আল্লাহ্ ",
+                        "ঈমান কি কমে ও বাড়ে  ",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      Text(" কোথায় আছেন?", style: TextStyle(
+                      Text("(পরিবর্তন হয়)?", style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),)
@@ -145,7 +145,7 @@ class _QuestionPage7State extends State<QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("সর্বত্র বিরাজমান",
+                  child: Text("না",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -163,7 +163,7 @@ class _QuestionPage7State extends State<QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("নির্দিষ্টি কিছু জায়গায়",
+                  child: Text("হ্যাঁ",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -173,25 +173,7 @@ class _QuestionPage7State extends State<QuestionPage7> {
               height: 20,
             ),
             Container(
-              height: 65,
-              width: 300,
-              decoration: const BoxDecoration(
-                  color: Colors.indigo,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(50),
-                      bottomRight: Radius.circular(50))),
-              child: const Center(
-                  child: Text("মানুষের অন্তরে (ক্বলব)",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white))),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            Container(
-              height: 65,
+              height: 66,
               width: 300,
               decoration: const BoxDecoration(
                   color: Colors.indigo,
@@ -201,12 +183,12 @@ class _QuestionPage7State extends State<QuestionPage7> {
               child: const Center(
                   child: Column(
                     children: [
-                      Text("সপ্তাকাশের উপর আরশে ",
+                      Text("এ বিষয়ে কুরআন হাদিসে ",
                           style: TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
                               color: Colors.white)),
-                      Text("আযীমে", style: TextStyle(
+                      Text("কিছু বলা নাই", style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                           color: Colors.white))
@@ -216,10 +198,28 @@ class _QuestionPage7State extends State<QuestionPage7> {
             const SizedBox(
               height: 20,
             ),
+            Container(
+              height: 65,
+              width: 300,
+              decoration: const BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(50),
+                      bottomRight: Radius.circular(50))),
+              child: const Center(
+                  child: Text("উপরের কোনোটি সঠিক নয়",
+                      style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white))),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const QuestionPage8()));
+                    MaterialPageRoute(builder: (context)=>const QuestionPage5()));
               },
               child: Container(
                 height: 50,

@@ -1,6 +1,8 @@
 import 'package:bangla_quiz/view/Islamic%20Quiz/question_page1.dart';
 import 'package:flutter/material.dart';
 
+import 'Level 1/question_page1.dart';
+
 class IslamicQuizLevelScreen extends StatefulWidget {
   const IslamicQuizLevelScreen({super.key});
 
@@ -85,7 +87,7 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            const QuestionPage1()));
+                                        const QuestionPage1()));
                               },
                               child: Container(
                                 height: 45,

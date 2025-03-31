@@ -1,15 +1,15 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/islamic_quiz_level_screen.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%201/question_page7.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class QuestionPage10 extends StatefulWidget {
-  const QuestionPage10({super.key});
+class QuestionPage6 extends StatefulWidget {
+  const QuestionPage6({super.key});
 
   @override
-  State<QuestionPage10> createState() => _QuestionPage10State();
+  State<QuestionPage6> createState() => _QuestionPage6State();
 }
 
-class _QuestionPage10State extends State<QuestionPage10> {
+class _QuestionPage6State extends State<QuestionPage6> {
   int counter_seconds=30;
   @override
   void initState() {
@@ -24,7 +24,7 @@ class _QuestionPage10State extends State<QuestionPage10> {
           setTimer();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>IslamicQuizLevelScreen()));
+              MaterialPageRoute(builder: (context)=>QuestionPage7()));
         }
       });
     });
@@ -52,10 +52,10 @@ class _QuestionPage10State extends State<QuestionPage10> {
                           fontWeight: FontWeight.bold,
                           color: Colors.white)),
                   SizedBox(
-                    width: 98,
+                    width: 108,
                   ),
                   Text(
-                    "10/10",
+                    "6/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -120,12 +120,16 @@ class _QuestionPage10State extends State<QuestionPage10> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "কুরআনের প্রথম সূরার নাম কী?",
+                        "আল্লাহ তাআালার কতটি ",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
+                      Text(" গুণবাচক নাম রয়েছে?", style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),)
                     ],
                   )),
             ),
@@ -141,7 +145,7 @@ class _QuestionPage10State extends State<QuestionPage10> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("সূরা বাকারাহ",
+                  child: Text("১০০",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -159,7 +163,7 @@ class _QuestionPage10State extends State<QuestionPage10> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("সূরা কাওসার",
+                  child: Text("৯৯",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -177,7 +181,7 @@ class _QuestionPage10State extends State<QuestionPage10> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("সূরা ফাতিহা",
+                  child: Text("১০১",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -195,15 +199,11 @@ class _QuestionPage10State extends State<QuestionPage10> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Column(
-                    children: [
-                      Text("সূরা ইখলাস",
-                          style: TextStyle(
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    ],
-                  )),
+                  child: Text("৯৮",
+                      style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white))),
             ),
             const SizedBox(
               height: 20,
@@ -211,7 +211,7 @@ class _QuestionPage10State extends State<QuestionPage10> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const IslamicQuizLevelScreen()));
+                    MaterialPageRoute(builder: (context)=>const QuestionPage7()));
               },
               child: Container(
                 height: 50,

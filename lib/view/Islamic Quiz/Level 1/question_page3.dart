@@ -1,30 +1,30 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/question_page6.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%201/question_page4.dart';
 import 'package:flutter/material.dart';
 
-class QuestionPage5 extends StatefulWidget {
-  const QuestionPage5({super.key});
+class QuestionPage3 extends StatefulWidget {
+  const QuestionPage3({super.key});
 
   @override
-  State<QuestionPage5> createState() => _QuestionPage5State();
+  State<QuestionPage3> createState() => _QuestionPage3State();
 }
 
-class _QuestionPage5State extends State<QuestionPage5> {
+class _QuestionPage3State extends State<QuestionPage3> {
   int counter_seconds=30;
+
   @override
   void initState() {
-    setTimer();
+   setTiner();
     super.initState();
   }
-  void setTimer()async{
+  void setTiner()async{
     Future.delayed(Duration(seconds: 1)).then((value){
       setState(() {
         if(counter_seconds>0){
           counter_seconds--;
-          setTimer();
+          setTiner();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>QuestionPage6()));
+              MaterialPageRoute(builder: (context)=>QuestionPage4()));
         }
       });
     });
@@ -55,7 +55,7 @@ class _QuestionPage5State extends State<QuestionPage5> {
                     width: 108,
                   ),
                   Text(
-                    "5/10",
+                    "3/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -120,13 +120,13 @@ class _QuestionPage5State extends State<QuestionPage5> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "ইসরাফিল (আঃ) এর   ",
+                        "কোন ফেরেশতাকে সকল  ",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      Text("ফদায়িত্ব কি?", style: TextStyle(
+                      Text("ফেরেশতার সরদার বলা হয়?", style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),)
@@ -145,7 +145,7 @@ class _QuestionPage5State extends State<QuestionPage5> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("জান কবজ",
+                  child: Text("মীকাঈল (আঃ)",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -163,7 +163,7 @@ class _QuestionPage5State extends State<QuestionPage5> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("শিংগায় ফুৎকার",
+                  child: Text("জিবরাইল (আঃ)",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -181,7 +181,7 @@ class _QuestionPage5State extends State<QuestionPage5> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("বৃষ্টি বর্ষণ, উদ্ভিদ উৎপাদন",
+                  child: Text("আজরাইল (আঃ)",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -199,7 +199,7 @@ class _QuestionPage5State extends State<QuestionPage5> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("উপরের কোনোটি নয়",
+                  child: Text("ইসরাফিল(আঃ)",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -211,7 +211,7 @@ class _QuestionPage5State extends State<QuestionPage5> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const QuestionPage6()));
+                    MaterialPageRoute(builder: (context)=>const QuestionPage4()));
               },
               child: Container(
                 height: 50,
