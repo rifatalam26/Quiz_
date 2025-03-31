@@ -1,3 +1,4 @@
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page4.dart';
 import 'package:flutter/material.dart';
 
 class L2QuestionPage3 extends StatefulWidget {
@@ -22,7 +23,7 @@ class _L2QuestionPage3State extends State<L2QuestionPage3> {
           setTiner();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>L2QuestionPage3()));
+              MaterialPageRoute(builder: (context)=>const L2QuestionPage4()));
         }
       });
     });
@@ -209,7 +210,7 @@ class _L2QuestionPage3State extends State<L2QuestionPage3> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const L2QuestionPage3()));
+                    MaterialPageRoute(builder: (context)=>const L2QuestionPage4()));
               },
               child: Container(
                 height: 50,
