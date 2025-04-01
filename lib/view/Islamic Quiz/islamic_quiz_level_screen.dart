@@ -1,3 +1,4 @@
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page1.dart';
 import 'package:bangla_quiz/view/Islamic%20Quiz/question_page1.dart';
 import 'package:flutter/material.dart';
 
@@ -146,7 +147,10 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                               width: 60,
                             ),
                             InkWell(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context)=>L2QuestionPage1()));
+                              },
                               child: Container(
                                 height: 45,
                                 width: 80,
