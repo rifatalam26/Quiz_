@@ -1,14 +1,16 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page8.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page9.dart';
 import 'package:flutter/material.dart';
 
-class L2QuestionPage7 extends StatefulWidget {
-  const L2QuestionPage7({super.key});
+import 'l2_question_page7.dart';
+
+class L2QuestionPage8 extends StatefulWidget {
+  const L2QuestionPage8({super.key});
 
   @override
-  State<L2QuestionPage7> createState() => _L2QuestionPage7State();
+  State<L2QuestionPage8> createState() => _L2QuestionPage8State();
 }
 
-class _L2QuestionPage7State extends State<L2QuestionPage7> {
+class _L2QuestionPage8State extends State<L2QuestionPage8> {
   int counter_seconds=30;
   @override
   void initState() {
@@ -23,7 +25,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
           setTiner();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>const L2QuestionPage8()));
+              MaterialPageRoute(builder: (context)=>const L2QuestionPage9()));
         }
       });
     });
@@ -54,7 +56,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                     width: 108,
                   ),
                   Text(
-                    "7/10",
+                    "8/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -119,7 +121,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "ইসলামের প্রধান ধর্মগ্রন্থ কী?",
+                        "জান্নাতে কাদের সংখ্যা বেশি হবে?",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
@@ -144,7 +146,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("জাবুর",
+                  child: Text("নামাজিদের",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -162,7 +164,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("কুরআন",
+                  child: Text("বড়লোকদের",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -180,7 +182,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("ইঞ্জিল",
+                  child: Text("মহিলাদের",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -198,7 +200,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("তাওরাত",
+                  child: Text("দরিদ্রদের",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -210,7 +212,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const L2QuestionPage8()));
+                    MaterialPageRoute(builder: (context)=>const L2QuestionPage9()));
               },
               child: Container(
                 height: 50,

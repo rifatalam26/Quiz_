@@ -1,14 +1,14 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page8.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/islamic_quiz_level_screen.dart';
 import 'package:flutter/material.dart';
 
-class L2QuestionPage7 extends StatefulWidget {
-  const L2QuestionPage7({super.key});
+class L2QuestionPage10 extends StatefulWidget {
+  const L2QuestionPage10({super.key});
 
   @override
-  State<L2QuestionPage7> createState() => _L2QuestionPage7State();
+  State<L2QuestionPage10> createState() => _L2QuestionPage10State();
 }
 
-class _L2QuestionPage7State extends State<L2QuestionPage7> {
+class _L2QuestionPage10State extends State<L2QuestionPage10> {
   int counter_seconds=30;
   @override
   void initState() {
@@ -23,7 +23,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
           setTiner();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>const L2QuestionPage8()));
+              MaterialPageRoute(builder: (context)=>const IslamicQuizLevelScreen()));
         }
       });
     });
@@ -51,10 +51,10 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                           fontWeight: FontWeight.bold,
                           color: Colors.white)),
                   SizedBox(
-                    width: 108,
+                    width: 99,
                   ),
                   Text(
-                    "7/10",
+                    "10/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -119,13 +119,13 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "ইসলামের প্রধান ধর্মগ্রন্থ কী?",
+                        "রোজা পালনের উদ্দেশ্য কী?",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      // Text(" থেকে পাওয়া যাবে?", style: TextStyle(
+                      // Text(" কে হবেন?", style: TextStyle(
                       //     fontSize: 22,
                       //     fontWeight: FontWeight.bold,
                       //     color: Colors.white),)
@@ -144,7 +144,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("জাবুর",
+                  child: Text("তাকওয়া অর্জন করা",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -162,7 +162,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("কুরআন",
+                  child: Text("ধৈর্যশীল হওয়া",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -180,7 +180,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("ইঞ্জিল",
+                  child: Text("ওজন কমানো",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -198,7 +198,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("তাওরাত",
+                  child: Text("ক্ষুধা অনুভব করা",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -210,7 +210,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const L2QuestionPage8()));
+                    MaterialPageRoute(builder: (context)=>const IslamicQuizLevelScreen()));
               },
               child: Container(
                 height: 50,
@@ -235,3 +235,4 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
     );
   }
 }
+
