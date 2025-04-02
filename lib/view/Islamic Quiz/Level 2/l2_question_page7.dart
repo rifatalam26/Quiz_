@@ -53,7 +53,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                     width: 108,
                   ),
                   Text(
-                    "6/10",
+                    "7/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -118,16 +118,16 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "জান্নাতের সুগন্ধ কত দূরের পথ",
+                        "ইসলামের প্রধান ধর্মগ্রন্থ কী?",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      Text(" থেকে পাওয়া যাবে?", style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),)
+                      // Text(" থেকে পাওয়া যাবে?", style: TextStyle(
+                      //     fontSize: 22,
+                      //     fontWeight: FontWeight.bold,
+                      //     color: Colors.white),)
                     ],
                   )),
             ),
@@ -143,7 +143,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("৫০০ বছরের পথ থেকে",
+                  child: Text("জাবুর",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -161,7 +161,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("১০০ বছরের পথ থেকে",
+                  child: Text("কুরআন",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -179,7 +179,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("৫০ বছরের পথ থেকে",
+                  child: Text("ইঞ্জিল",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -197,7 +197,7 @@ class _L2QuestionPage7State extends State<L2QuestionPage7> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("২০০ বছরের পথ থেকে",
+                  child: Text("তাওরাত",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
