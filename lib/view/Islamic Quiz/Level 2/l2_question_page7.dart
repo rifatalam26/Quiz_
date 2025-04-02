@@ -1,14 +1,13 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page6.dart';
 import 'package:flutter/material.dart';
 
-class L2QuestionPage5 extends StatefulWidget {
-  const L2QuestionPage5({super.key});
+class L2QuestionPage7 extends StatefulWidget {
+  const L2QuestionPage7({super.key});
 
   @override
-  State<L2QuestionPage5> createState() => _L2QuestionPage5State();
+  State<L2QuestionPage7> createState() => _L2QuestionPage7State();
 }
 
-class _L2QuestionPage5State extends State<L2QuestionPage5> {
+class _L2QuestionPage7State extends State<L2QuestionPage7> {
   int counter_seconds=30;
   @override
   void initState() {
@@ -23,7 +22,7 @@ class _L2QuestionPage5State extends State<L2QuestionPage5> {
           setTiner();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>const L2QuestionPage6()));
+              MaterialPageRoute(builder: (context)=>const L2QuestionPage7()));
         }
       });
     });
@@ -54,7 +53,7 @@ class _L2QuestionPage5State extends State<L2QuestionPage5> {
                     width: 108,
                   ),
                   Text(
-                    "5/10",
+                    "6/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -119,13 +118,13 @@ class _L2QuestionPage5State extends State<L2QuestionPage5> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "মুসলমানরা কোন দিকে মুখ ",
+                        "জান্নাতের সুগন্ধ কত দূরের পথ",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      Text("করে নামাজ পড়ে?", style: TextStyle(
+                      Text(" থেকে পাওয়া যাবে?", style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),)
@@ -144,7 +143,7 @@ class _L2QuestionPage5State extends State<L2QuestionPage5> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("মসজিদে নববী",
+                  child: Text("৫০০ বছরের পথ থেকে",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -162,7 +161,7 @@ class _L2QuestionPage5State extends State<L2QuestionPage5> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("কাবা",
+                  child: Text("১০০ বছরের পথ থেকে",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -180,7 +179,7 @@ class _L2QuestionPage5State extends State<L2QuestionPage5> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("বাইতুল মাকদিস",
+                  child: Text("৫০ বছরের পথ থেকে",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -198,7 +197,7 @@ class _L2QuestionPage5State extends State<L2QuestionPage5> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("মদিনা",
+                  child: Text("২০০ বছরের পথ থেকে",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -210,7 +209,7 @@ class _L2QuestionPage5State extends State<L2QuestionPage5> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const L2QuestionPage6()));
+                    MaterialPageRoute(builder: (context)=>const L2QuestionPage7()));
               },
               child: Container(
                 height: 50,
