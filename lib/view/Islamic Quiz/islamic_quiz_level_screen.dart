@@ -3,6 +3,7 @@ import 'package:bangla_quiz/view/Islamic%20Quiz/question_page1.dart';
 import 'package:flutter/material.dart';
 
 import 'Level 1/question_page1.dart';
+import 'Level 3/level_3_question_page_1.dart';
 
 class IslamicQuizLevelScreen extends StatefulWidget {
   const IslamicQuizLevelScreen({super.key});
@@ -15,15 +16,6 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   foregroundColor: Colors.white,
-      //   centerTitle: true,
-      //   backgroundColor: Colors.indigo,
-      //   title: const Text(
-      //     "ইসলামিক কুইজ",
-      //     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-      //   ),
-      // ),
       backgroundColor: const Color(0xff0e171f),
       body: SingleChildScrollView(
         child: Column(
@@ -149,7 +141,7 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                             InkWell(
                               onTap: () {
                                 Navigator.push(context,
-                                    MaterialPageRoute(builder: (context)=>L2QuestionPage1()));
+                                    MaterialPageRoute(builder: (context)=>const L2QuestionPage1()));
                               },
                               child: Container(
                                 height: 45,
@@ -208,7 +200,10 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                               width: 60,
                             ),
                             InkWell(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context)=>const Level3QuestionPage1()));
+                              },
                               child: Container(
                                 height: 45,
                                 width: 80,

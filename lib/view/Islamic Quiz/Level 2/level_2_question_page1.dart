@@ -9,26 +9,28 @@ class L2QuestionPage1 extends StatefulWidget {
 }
 
 class _QuestionPage1State extends State<L2QuestionPage1> {
-  int counter_seconds=30;
+  int counterSeconds = 30;
 
   @override
   void initState() {
-    setTiner();
+    setTimer();
     super.initState();
   }
-  void setTiner()async{
-    Future.delayed(const Duration(seconds: 1)).then((value){
+
+  void setTimer() async {
+    Future.delayed(const Duration(seconds: 1)).then((value) {
       setState(() {
-        if(counter_seconds>0){
-          counter_seconds--;
-          setTiner();
-        }else{
+        if (counterSeconds > 0) {
+          counterSeconds--;
+          setTimer();
+        } else {
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>const L2QuestionPage2()));
+              MaterialPageRoute(builder: (context) => const L2QuestionPage2()));
         }
       });
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +42,8 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
               decoration: const BoxDecoration(
                   color: Colors.indigo,
                   borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(50),)),
+                    bottomLeft: Radius.circular(50),
+                  )),
               child: const Row(
                 children: [
                   SizedBox(
@@ -68,8 +71,8 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                       backgroundColor: Colors.lightGreen,
                       child: Text(
                         "Q/A",
-                        style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
                   )
@@ -97,9 +100,9 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                             image: AssetImage(
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
-                   Text(
-                    counter_seconds.toString(),
-                    style: TextStyle(
+                  Text(
+                    counterSeconds.toString(),
+                    style: const TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
                         color: Colors.yellow),
@@ -114,24 +117,25 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
               height: 120,
               width: 335,
               decoration: BoxDecoration(
-                  color: Colors.indigo, borderRadius: BorderRadius.circular(30)),
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.circular(30)),
               child: const Center(
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "ইসলামের শেষ নবী কে? ",
-                        style: TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
-                      // Text("ফেরেশতার সরদার বলা হয়?", style: TextStyle(
-                      //     fontSize: 22,
-                      //     fontWeight: FontWeight.bold,
-                      //     color: Colors.white),)
-                    ],
-                  )),
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "ইসলামের শেষ নবী কে? ",
+                    style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                  // Text("ফেরেশতার সরদার বলা হয়?", style: TextStyle(
+                  //     fontSize: 22,
+                  //     fontWeight: FontWeight.bold,
+                  //     color: Colors.white),)
+                ],
+              )),
             ),
             const SizedBox(
               height: 20,
@@ -209,9 +213,11 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
               height: 20,
             ),
             InkWell(
-              onTap: (){
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const L2QuestionPage2()));
+              onTap: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const L2QuestionPage2()));
               },
               child: Container(
                 height: 50,
@@ -222,12 +228,12 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                 ),
                 child: const Center(
                     child: Text(
-                      "Next",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22,
-                          color: Colors.white),
-                    )),
+                  "Next",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                      color: Colors.white),
+                )),
               ),
             )
           ],
