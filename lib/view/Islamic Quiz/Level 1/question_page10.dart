@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../islamic_quiz-level_screen.dart';
+
 import '../islamic_quiz_level_screen.dart';
 
 class QuestionPage10 extends StatefulWidget {
