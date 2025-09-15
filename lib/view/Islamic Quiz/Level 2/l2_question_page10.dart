@@ -98,7 +98,7 @@ class _L2QuestionPage10State extends State<L2QuestionPage10> {
                   ),
                   Text(
                     counter_seconds.toString(),
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
                         color: Colors.yellow),
