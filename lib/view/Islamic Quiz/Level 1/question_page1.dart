@@ -9,7 +9,7 @@ class QuestionPage1 extends StatefulWidget {
 }
 
 class _QuestionPage1State extends State<QuestionPage1> {
-  int counter_seconds = 30;
+  int counterSeconds = 30;
 
   @override
   void initState() {
@@ -19,10 +19,10 @@ class _QuestionPage1State extends State<QuestionPage1> {
 
   void setTimer() async {
     Future.delayed(const Duration(seconds: 1)).then((value) {
-      print("--------$counter_seconds-------");
+      print("--------$counterSeconds-------");
       setState(() {
-        if (counter_seconds > 0) {
-          counter_seconds--;
+        if (counterSeconds > 0) {
+          counterSeconds--;
           setTimer();
         } else {
           print("--------End--------");
@@ -103,7 +103,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
                   Text(
-                    counter_seconds.toString(),
+                    counterSeconds.toString(),
                     style: const TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -123,12 +123,12 @@ class _QuestionPage1State extends State<QuestionPage1> {
                   borderRadius: BorderRadius.circular(30)),
               child: const Center(
                   child: Text(
-                    "ইসলামের প্রথম নবী কে?",
-                    style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
-                  )),
+                "ইসলামের প্রথম নবী কে?",
+                style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              )),
             ),
             const SizedBox(
               height: 20,
@@ -207,7 +207,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
             ),
             InkWell(
               onTap: () {
-                counter_seconds = 0;
+                counterSeconds = 0;
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
@@ -222,12 +222,12 @@ class _QuestionPage1State extends State<QuestionPage1> {
                 ),
                 child: const Center(
                     child: Text(
-                      "Next",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22,
-                          color: Colors.white),
-                    )),
+                  "Next",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                      color: Colors.white),
+                )),
               ),
             )
           ],

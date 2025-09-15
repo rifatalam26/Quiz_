@@ -1,15 +1,14 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page10.dart';
-import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page8.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/level_2_question_page7.dart';
 import 'package:flutter/material.dart';
 
-class L2QuestionPage9 extends StatefulWidget {
-  const L2QuestionPage9({super.key});
+class L2QuestionPage6 extends StatefulWidget {
+  const L2QuestionPage6({super.key});
 
   @override
-  State<L2QuestionPage9> createState() => _L2QuestionPage9State();
+  State<L2QuestionPage6> createState() => _L2QuestionPage6State();
 }
 
-class _L2QuestionPage9State extends State<L2QuestionPage9> {
+class _L2QuestionPage6State extends State<L2QuestionPage6> {
   int counter_seconds=30;
   @override
   void initState() {
@@ -24,7 +23,7 @@ class _L2QuestionPage9State extends State<L2QuestionPage9> {
           setTiner();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>const L2QuestionPage10()));
+              MaterialPageRoute(builder: (context)=>const L2QuestionPage7()));
         }
       });
     });
@@ -55,7 +54,7 @@ class _L2QuestionPage9State extends State<L2QuestionPage9> {
                     width: 108,
                   ),
                   Text(
-                    "9/10",
+                    "6/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -120,13 +119,13 @@ class _L2QuestionPage9State extends State<L2QuestionPage9> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "জান্নাতী নারীদের সর্দার",
+                        "জান্নাতের সুগন্ধ কত দূরের পথ",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      Text(" কে হবেন?", style: TextStyle(
+                      Text(" থেকে পাওয়া যাবে?", style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),)
@@ -145,7 +144,7 @@ class _L2QuestionPage9State extends State<L2QuestionPage9> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("আয়েশা (রাঃ)",
+                  child: Text("৫০০ বছরের পথ থেকে",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -163,7 +162,7 @@ class _L2QuestionPage9State extends State<L2QuestionPage9> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("ফাতিমা (রাঃ)",
+                  child: Text("১০০ বছরের পথ থেকে",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -181,7 +180,7 @@ class _L2QuestionPage9State extends State<L2QuestionPage9> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("মারিয়াম (আঃ)",
+                  child: Text("৫০ বছরের পথ থেকে",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -199,7 +198,7 @@ class _L2QuestionPage9State extends State<L2QuestionPage9> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("খাদিজা (রাঃ)",
+                  child: Text("২০০ বছরের পথ থেকে",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -211,7 +210,7 @@ class _L2QuestionPage9State extends State<L2QuestionPage9> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const L2QuestionPage10()));
+                    MaterialPageRoute(builder: (context)=>const L2QuestionPage7()));
               },
               child: Container(
                 height: 50,

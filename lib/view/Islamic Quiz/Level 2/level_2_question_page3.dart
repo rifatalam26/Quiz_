@@ -1,16 +1,15 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page2.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/level_2_question_page4.dart';
 import 'package:flutter/material.dart';
 
-class L2QuestionPage1 extends StatefulWidget {
-  const L2QuestionPage1({super.key});
+class L2QuestionPage3 extends StatefulWidget {
+  const L2QuestionPage3({super.key});
 
   @override
-  State<L2QuestionPage1> createState() => _QuestionPage1State();
+  State<L2QuestionPage3> createState() => _L2QuestionPage3State();
 }
 
-class _QuestionPage1State extends State<L2QuestionPage1> {
+class _L2QuestionPage3State extends State<L2QuestionPage3> {
   int counter_seconds=30;
-
   @override
   void initState() {
     setTiner();
@@ -24,7 +23,7 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
           setTiner();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>const L2QuestionPage2()));
+              MaterialPageRoute(builder: (context)=>const L2QuestionPage4()));
         }
       });
     });
@@ -55,7 +54,7 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                     width: 108,
                   ),
                   Text(
-                    "1/10",
+                    "3/10",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -97,7 +96,7 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                             image: AssetImage(
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
-                   Text(
+                  Text(
                     counter_seconds.toString(),
                     style: TextStyle(
                         fontSize: 22,
@@ -120,16 +119,16 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "ইসলামের শেষ নবী কে? ",
+                        "জান্নাতের সবচেয়ে বড় ",
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
-                      // Text("ফেরেশতার সরদার বলা হয়?", style: TextStyle(
-                      //     fontSize: 22,
-                      //     fontWeight: FontWeight.bold,
-                      //     color: Colors.white),)
+                      Text("নিয়ামত কি?", style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),)
                     ],
                   )),
             ),
@@ -145,7 +144,7 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("হযরত দাউদ(আঃ)",
+                  child: Text("হুর",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -163,7 +162,7 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("হযরত মুসা (আঃ)",
+                  child: Text("প্রবাহমান ঝর্ণা",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -181,7 +180,7 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("হযরত মুহাম্মদ (সঃ)",
+                  child: Text("আল্লাহর দিদার",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -199,7 +198,7 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
-                  child: Text("হযরত ঈসা (আঃ)",
+                  child: Text("অমরত্ব জীবন",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -211,7 +210,7 @@ class _QuestionPage1State extends State<L2QuestionPage1> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const L2QuestionPage2()));
+                    MaterialPageRoute(builder: (context)=>const L2QuestionPage4()));
               },
               child: Container(
                 height: 50,

@@ -1,4 +1,4 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/l2_question_page5.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/level_2_question_page5.dart';
 import 'package:flutter/material.dart';
 
 class L2QuestionPage4 extends StatefulWidget {
