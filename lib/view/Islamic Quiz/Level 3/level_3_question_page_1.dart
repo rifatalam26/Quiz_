@@ -157,7 +157,7 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
                     topLeft: Radius.circular(50),
                     bottomRight: Radius.circular(50))),
             child: const Center(
-                child: Text("হযরত মুসা (আঃ)",
+                child: Text("রোজা",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -175,7 +175,7 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
                     topLeft: Radius.circular(50),
                     bottomRight: Radius.circular(50))),
             child: const Center(
-                child: Text("হযরত মুহাম্মদ (সঃ)",
+                child: Text("যাকাত",
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -184,20 +184,23 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
           const SizedBox(
             height: 20,
           ),
-          Container(
-            height: 65,
-            width: 300,
-            decoration: const BoxDecoration(
-                color: Colors.indigo,
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(50),
-                    bottomRight: Radius.circular(50))),
-            child: const Center(
-                child: Text("হযরত ঈসা (আঃ)",
-                    style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white))),
+          InkWell(
+            onTap: (){},
+            child: Container(
+              height: 65,
+              width: 300,
+              decoration: const BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(50),
+                      bottomRight: Radius.circular(50))),
+              child: const Center(
+                  child: Text("হজ্জ",
+                      style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white))),
+            ),
           ),
           const SizedBox(
             height: 20,

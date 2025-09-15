@@ -1,6 +1,7 @@
 
-import 'package:bangla_quiz/view/splash_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'Islamic Quiz/Level 3/test.dart';
 
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: ColorChangeScreen(),
     );
   }
 }
