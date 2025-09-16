@@ -2,26 +2,17 @@ import 'package:flutter/material.dart';
 
 
 
-class ColorChangeScreen extends StatefulWidget {
-  const ColorChangeScreen({super.key});
-
+class ColorChangeContainer extends StatefulWidget {
   @override
-  State<ColorChangeScreen> createState() => _ColorChangeScreenState();
+  _ColorChangeContainerState createState() => _ColorChangeContainerState();
 }
 
-class _ColorChangeScreenState extends State<ColorChangeScreen> {
-  // দুটি রঙের তালিকা
-  final List<Color> _colors = [
-    Colors.blue,
-    Colors.red,
-  ];
+class _ColorChangeContainerState extends State<ColorChangeContainer> {
+  bool _isRed = true; // রঙ ট্র্যাক করার জন্য
 
-  int _currentColorIndex = 0;
-
-  void _changeColor() {
+  void _toggleColor() {
     setState(() {
-      // রঙের ইনডেক্স পরিবর্তন করি (0 এবং 1 এর মধ্যে টগল হবে)
-      _currentColorIndex = (_currentColorIndex + 1) % _colors.length;
+      _isRed = !_isRed; // রঙ পরিবর্তন
     });
   }
 
@@ -29,34 +20,19 @@ class _ColorChangeScreenState extends State<ColorChangeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Color Changing Container'),
+        title: Text('Tap to Change Color'),
       ),
       body: Center(
         child: GestureDetector(
-          onTap: _changeColor,
+          onTap: _toggleColor, // Tap করলে রঙ পরিবর্তন হবে
           child: Container(
             width: 200,
             height: 200,
-            decoration: BoxDecoration(
-              color: _colors[_currentColorIndex],
-              borderRadius: BorderRadius.circular(15),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.2),
-                  blurRadius: 10,
-                  spreadRadius: 2,
-                  offset: const Offset(0, 4),
-                ),
-              ],
-            ),
+            color: _isRed ? Colors.red : Colors.blue, // রঙ নির্ধারণ
             child: const Center(
               child: Text(
-                'Tap me!',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                'Tap Me!',
+                style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
           ),
