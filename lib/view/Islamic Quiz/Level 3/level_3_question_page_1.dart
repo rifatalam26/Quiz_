@@ -12,7 +12,7 @@ class Level3QuestionPage1 extends StatefulWidget {
 class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
   int counterSeconds = 30;
   final List<Color> _colors = [
-    Colors.black,
+    Colors.indigo,
     Colors.green,
   ];
   int _currentColorIndex = 0;
