@@ -11,11 +11,11 @@ class Level3QuestionPage1 extends StatefulWidget {
 
 class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
   int counterSeconds = 30;
-  bool _isRed = true; // রঙ ট্র্যাক করার জন্য
+  bool _isRed = true;
 
   void _toggleColor() {
     setState(() {
-      _isRed = !_isRed; // রঙ পরিবর্তন
+      _isRed = !_isRed;
     });
   }
 
