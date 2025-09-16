@@ -11,7 +11,17 @@ class Level3QuestionPage1 extends StatefulWidget {
 
 class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
   int counterSeconds = 30;
-
+  final List<Color> _colors = [
+    Colors.black,
+    Colors.green,
+  ];
+  int _currentColorIndex = 0;
+  void _changeColor() {
+    setState(() {
+      // রঙের ইনডেক্স পরিবর্তন করি (0 এবং 1 এর মধ্যে টগল হবে)
+      _currentColorIndex = (_currentColorIndex + 1) % _colors.length;
+    });
+  }
   @override
   void initState() {
     setTimer();
@@ -170,7 +180,7 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
             height: 65,
             width: 300,
             decoration: const BoxDecoration(
-                color: Colors.indigo,
+                color: Colors.indigo ,
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(50),
                     bottomRight: Radius.circular(50))),
@@ -189,9 +199,9 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
             child: Container(
               height: 65,
               width: 300,
-              decoration: const BoxDecoration(
-                  color: Colors.indigo,
-                  borderRadius: BorderRadius.only(
+              decoration:  BoxDecoration(
+                  color: _colors[_currentColorIndex],
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
               child: const Center(
