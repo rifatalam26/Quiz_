@@ -193,12 +193,12 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
             height: 20,
           ),
           InkWell(
-            onTap: (){},
+            onTap: _toggleColor,
             child: Container(
               height: 65,
               width: 300,
               decoration:  BoxDecoration(
-                  color:_isRed ? Colors.red : Colors.blue,
+                  color:_isRed ? Colors.indigo : Colors.green,
                   borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(50),
                       bottomRight: Radius.circular(50))),
