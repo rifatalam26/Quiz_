@@ -191,6 +191,7 @@ class _IslamicQuizLevelScreenState extends State<IslamicQuizLevelScreen> {
                             ),
                             const Text(
                               "Level- 3",
+
                               style: TextStyle(
                                   fontSize: 25,
                                   fontWeight: FontWeight.bold,
