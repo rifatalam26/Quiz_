@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../Level 2/level_2_question_page2.dart';
-import 'level_3_question_page_2.dart';
+import 'level_3_question_page_1.dart';
 
-class Level3QuestionPage1 extends StatefulWidget {
-  const Level3QuestionPage1({super.key});
+class Level3QuestionPage2 extends StatefulWidget {
+  const Level3QuestionPage2({super.key});
 
   @override
-  State<Level3QuestionPage1> createState() => _Level3QuestionPage1State();
+  State<Level3QuestionPage2> createState() => _Level3QuestionPage2State();
 }
 
-class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
+class _Level3QuestionPage2State extends State<Level3QuestionPage2> {
   int counterSeconds = 30;
   bool _isRed = true;
 
@@ -34,7 +33,7 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
           setTimer();
         } else {
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context) => const L2QuestionPage2()));
+              MaterialPageRoute(builder: (context) => const Level3QuestionPage1()));
         }
       });
     });
@@ -80,7 +79,7 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
                     child: Text(
                       "Q/A",
                       style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ),
                 )
@@ -128,12 +127,12 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
                 color: Colors.indigo, borderRadius: BorderRadius.circular(30)),
             child: const Center(
                 child: Text(
-              "ইসলামের পঞ্চম স্তম্ভ কোনটি?",
-              style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),
-            )),
+                  "ইসলামের পঞ্চম স্তম্ভ কোনটি?",
+                  style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                )),
           ),
           const SizedBox(
             height: 20,
@@ -218,7 +217,7 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
               Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const Level3QuestionPage2()));
+                      builder: (context) => const Level3QuestionPage1()));
             },
             child: Container(
               height: 50,
@@ -229,12 +228,12 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
               ),
               child: const Center(
                   child: Text(
-                "Next",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22,
-                    color: Colors.white),
-              )),
+                    "Next",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22,
+                        color: Colors.white),
+                  )),
             ),
           )
         ],
