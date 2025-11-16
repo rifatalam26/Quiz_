@@ -12,15 +12,15 @@ class _QuestionPage2State extends State<L2QuestionPage2> {
   int counter_seconds=30;
   @override
   void initState() {
-    setTiner();
+    setTimer();
     super.initState();
   }
-  void setTiner()async{
+  void setTimer()async{
     Future.delayed(const Duration(seconds: 1)).then((value){
       setState(() {
         if(counter_seconds>0){
           counter_seconds--;
-          setTiner();
+          setTimer();
         }else{
           Navigator.pushReplacement(context,
               MaterialPageRoute(builder: (context)=>const L2QuestionPage3()));
