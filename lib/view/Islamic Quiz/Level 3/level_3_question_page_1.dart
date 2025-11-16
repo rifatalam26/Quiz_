@@ -86,7 +86,6 @@ class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
               ],
             ),
           ),
-
           const SizedBox(
             height: 15,
           ),
