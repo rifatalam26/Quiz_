@@ -65,7 +65,7 @@ class _Level3QuestionPage2State extends State<Level3QuestionPage2> {
                   width: 108,
                 ),
                 Text(
-                  "1/10",
+                  "2/10",
                   style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
