@@ -1,5 +1,5 @@
 import 'package:bangla_quiz/view/Islamic%20Quiz/Level%202/level_2_question_page1.dart';
-import 'package:bangla_quiz/view/Islamic%20Quiz/question_page1.dart';
+import 'package:bangla_quiz/view/Islamic%20Quiz/Level%201/question_page1.dart';
 import 'package:flutter/material.dart';
 
 import 'Level 1/question_page1.dart';

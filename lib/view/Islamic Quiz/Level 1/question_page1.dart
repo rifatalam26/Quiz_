@@ -123,12 +123,12 @@ class _QuestionPage1State extends State<QuestionPage1> {
                   borderRadius: BorderRadius.circular(30)),
               child: const Center(
                   child: Text(
-                "ইসলামের প্রথম নবী কে?",
-                style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              )),
+                    "ইসলামের প্রথম নবী কে?",
+                    style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  )),
             ),
             const SizedBox(
               height: 20,
@@ -222,12 +222,12 @@ class _QuestionPage1State extends State<QuestionPage1> {
                 ),
                 child: const Center(
                     child: Text(
-                  "Next",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 22,
-                      color: Colors.white),
-                )),
+                      "Next",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 22,
+                          color: Colors.white),
+                    )),
               ),
             )
           ],
