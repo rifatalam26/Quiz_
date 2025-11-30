@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Level 2/level_2_question_page2.dart';
-import 'level_3_question_page_2.dart';
+
 
 class Level3QuestionPage2 extends StatefulWidget {
   const Level3QuestionPage2({super.key});
@@ -128,7 +128,7 @@ class _Level3QuestionPage2State extends State<Level3QuestionPage2> {
                 color: Colors.indigo, borderRadius: BorderRadius.circular(30)),
             child: const Center(
                 child: Text(
-              "ইসলামের পঞ্চম স্তম্ভ কোনটি?",
+              "ইসলাম ধর্মের প্রথম খলিফা কে ছিলেন?",
               style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
