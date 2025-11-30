@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import '../Level 2/level_2_question_page2.dart';
 import 'level_3_question_page_2.dart';
 
-class Level3QuestionPage1 extends StatefulWidget {
-  const Level3QuestionPage1({super.key});
+class Level3QuestionPage2 extends StatefulWidget {
+  const Level3QuestionPage2({super.key});
 
   @override
-  State<Level3QuestionPage1> createState() => _Level3QuestionPage1State();
+  State<Level3QuestionPage2> createState() => _Level3QuestionPage2State();
 }
 
-class _Level3QuestionPage1State extends State<Level3QuestionPage1> {
+class _Level3QuestionPage2State extends State<Level3QuestionPage2> {
   int counterSeconds = 30;
   bool _isRed = true;
 
