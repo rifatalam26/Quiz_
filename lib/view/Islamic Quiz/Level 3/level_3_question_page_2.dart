@@ -128,7 +128,7 @@ class _Level3QuestionPage2State extends State<Level3QuestionPage2> {
                 color: Colors.indigo, borderRadius: BorderRadius.circular(30)),
             child: const Center(
                 child: Text(
-              "ইসলাম ধর্মের প্রথম খলিফা কে ছিলেন?",
+              "ইসলাম ধর্মের প্রথম  কে ছিলেন?",
               style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
